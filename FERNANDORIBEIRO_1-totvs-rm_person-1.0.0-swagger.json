@@ -1,0 +1,4472 @@
+{
+  "openapi" : "3.0.3",
+  "info" : {
+    "title" : "TOTVS RM - Person",
+    "version" : "1.0.0",
+    "contact" : { }
+  },
+  "servers" : [ {
+    "url" : "{{baseUrl}}"
+  } ],
+  "paths" : {
+    "/rh/v1/persons/{id}" : {
+      "get" : {
+        "tags" : [ "v1", "persons", "{id}" ],
+        "summary" : "Person Get",
+        "description" : "Person Get",
+        "operationId" : "personGet",
+        "parameters" : [ {
+          "name" : "query.attributes",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.sortBy",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.sortOrder",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.startIndex",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<integer>"
+          }
+        }, {
+          "name" : "query.count",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<integer>"
+          }
+        }, {
+          "name" : "query.expand",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.fields",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.filter",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : ""
+          }
+        }, {
+          "name" : "query.order",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.page",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<integer>"
+          }
+        }, {
+          "name" : "query.pageSize",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<integer>"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "CHAPA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODFREGUESIA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODIGOMX" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODIGOPT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODORGAOCLASSE" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODPOSTAL" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODUFREGISTRO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CURP" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTEMISSAOCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTEMISSAORIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTVALIDADECARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTVENCIDENTPT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "EMAILPESSOAL" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "IDBIOMETRIA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NROINT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NUMEROCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NUMERORIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "ORGEMISSORRIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "ORGEXPCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "PRIMEIRONOME" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "SOBRENOMEMAE" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "SOBRENOMEPAI" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "_expandables" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "object",
+                        "properties" : {
+                          "disablePerson" : {
+                            "type" : "string",
+                            "example" : "ea"
+                          }
+                        }
+                      },
+                      "example" : [ {
+                        "disablePerson" : "ea"
+                      }, {
+                        "disablePerson" : "in esse labore sint"
+                      } ]
+                    },
+                    "accessibilityFeaturesForJobLocal" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "adjustsImageSize" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "age" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "arrivalDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "bibliosUser" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "birth" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "blindPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "bloodType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilConditionClassification" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilConsort" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilianChildren" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilianChildrenNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "candidate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cep" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "city" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cityCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "code" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "company" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "complement" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "country" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "countryId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cpf" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "curriculumApprovalDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deafPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deathCertificateNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deceaseDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deceased" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "disabled" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "district" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "documentImageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "documentReverseSideImageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicense" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseFirstEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "educationalLevel" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCardDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCardEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralSection" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralWard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "email" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "employee" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "fax" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "firstJobYear" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "formerEmployee" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "homeState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "image" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "imageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "immigrationDecree" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "indefiniteTermResidence" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "intellectualImpairedPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "jobCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "letterModel19" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "location" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "maritalState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "mentallyImpairedPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryCertificateEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryCertificateEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryDischargeCertificate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryDivision" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryGrade" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryRegion" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militarySituation" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "mutePerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "name" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nationality" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nativeCountry" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalisationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalisationGatehouse" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalized" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalness" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalnessCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "neighborhoodTypeCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nickname" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nit" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "number" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "occupationCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "personNote" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber1" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber2" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber3" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "pppObservationCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "previousTrainingInvestment" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "professionalRegistrationNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rehabilitated" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "resourcesForJob" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rne" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rowState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "scriptTag" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "sex" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "shadeRace" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "smoker" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "socialName" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "state" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "street" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "streetTypeCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "student" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "teacher" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "userCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "validRow" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "visaType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardSerialNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    }
+                  }
+                },
+                "examples" : {
+                  "OK" : {
+                    "value" : {
+                      "CHAPA" : "<string>",
+                      "CODFREGUESIA" : "<string>",
+                      "CODIGOMX" : "<string>",
+                      "CODIGOPT" : "<string>",
+                      "CODORGAOCLASSE" : "<string>",
+                      "CODPOSTAL" : "<string>",
+                      "CODUFREGISTRO" : "<string>",
+                      "CURP" : "<string>",
+                      "DTEMISSAOCARTCIDADAO" : "<string>",
+                      "DTEMISSAORIC" : "<string>",
+                      "DTVALIDADECARTCIDADAO" : "<string>",
+                      "DTVENCIDENTPT" : "<string>",
+                      "EMAILPESSOAL" : "<string>",
+                      "IDBIOMETRIA" : "<string>",
+                      "NROINT" : "<string>",
+                      "NUMEROCARTCIDADAO" : "<string>",
+                      "NUMERORIC" : "<string>",
+                      "ORGEMISSORRIC" : "<string>",
+                      "ORGEXPCARTCIDADAO" : "<string>",
+                      "PRIMEIRONOME" : "<string>",
+                      "SOBRENOMEMAE" : "<string>",
+                      "SOBRENOMEPAI" : "<string>",
+                      "_expandables" : [ {
+                        "disablePerson" : "ea"
+                      }, {
+                        "disablePerson" : "in esse labore sint"
+                      } ],
+                      "accessibilityFeaturesForJobLocal" : "<string>",
+                      "adjustsImageSize" : "<string>",
+                      "age" : "<string>",
+                      "arrivalDate" : "<string>",
+                      "bibliosUser" : "<string>",
+                      "birth" : "<string>",
+                      "blindPerson" : "<string>",
+                      "bloodType" : "<string>",
+                      "brazilConditionClassification" : "<string>",
+                      "brazilConsort" : "<string>",
+                      "brazilianChildren" : "<string>",
+                      "brazilianChildrenNumber" : "<string>",
+                      "candidate" : "<string>",
+                      "cep" : "<string>",
+                      "city" : "<string>",
+                      "cityCode" : "<string>",
+                      "code" : "<string>",
+                      "company" : "<string>",
+                      "complement" : "<string>",
+                      "country" : "<string>",
+                      "countryId" : "<string>",
+                      "cpf" : "<string>",
+                      "curriculumApprovalDate" : "<string>",
+                      "deafPerson" : "<string>",
+                      "deathCertificateNumber" : "<string>",
+                      "deceaseDate" : "<string>",
+                      "deceased" : "<string>",
+                      "disabled" : "<string>",
+                      "district" : "<string>",
+                      "documentImageId" : "<string>",
+                      "documentReverseSideImageId" : "<string>",
+                      "driversLicense" : "<string>",
+                      "driversLicenseEmissionDate" : "<string>",
+                      "driversLicenseEmitterAgency" : "<string>",
+                      "driversLicenseEmitterState" : "<string>",
+                      "driversLicenseExpirationDate" : "<string>",
+                      "driversLicenseFirstEmissionDate" : "<string>",
+                      "driversLicenseType" : "<string>",
+                      "educationalLevel" : "<string>",
+                      "electoralCard" : "<string>",
+                      "electoralCardDate" : "<string>",
+                      "electoralCardEmitterState" : "<string>",
+                      "electoralSection" : "<string>",
+                      "electoralWard" : "<string>",
+                      "email" : "<string>",
+                      "employee" : "<string>",
+                      "fax" : "<string>",
+                      "firstJobYear" : "<string>",
+                      "formerEmployee" : "<string>",
+                      "homeState" : "<string>",
+                      "identityNumber" : "<string>",
+                      "identityNumberEmissionDate" : "<string>",
+                      "identityNumberEmitterAgency" : "<string>",
+                      "identityNumberEmitterState" : "<string>",
+                      "image" : "<string>",
+                      "imageId" : "<string>",
+                      "immigrationDecree" : "<string>",
+                      "indefiniteTermResidence" : "<string>",
+                      "intellectualImpairedPerson" : "<string>",
+                      "jobCode" : "<string>",
+                      "letterModel19" : "<string>",
+                      "location" : "<string>",
+                      "maritalState" : "<string>",
+                      "mentallyImpairedPerson" : "<string>",
+                      "militaryCertificateEmissionDate" : "<string>",
+                      "militaryCertificateEmitterAgency" : "<string>",
+                      "militaryDischargeCertificate" : "<string>",
+                      "militaryDivision" : "<string>",
+                      "militaryGrade" : "<string>",
+                      "militaryRegion" : "<string>",
+                      "militarySituation" : "<string>",
+                      "mutePerson" : "<string>",
+                      "name" : "<string>",
+                      "nationality" : "<string>",
+                      "nativeCountry" : "<string>",
+                      "naturalisationDate" : "<string>",
+                      "naturalisationGatehouse" : "<string>",
+                      "naturalized" : "<string>",
+                      "naturalness" : "<string>",
+                      "naturalnessCode" : "<string>",
+                      "neighborhoodTypeCode" : "<string>",
+                      "nickname" : "<string>",
+                      "nit" : "<string>",
+                      "number" : "<string>",
+                      "occupationCode" : "<string>",
+                      "passportEmissionDate" : "<string>",
+                      "passportExpirationDate" : "<string>",
+                      "passportNumber" : "<string>",
+                      "personNote" : "<string>",
+                      "phoneNumber1" : "<string>",
+                      "phoneNumber2" : "<string>",
+                      "phoneNumber3" : "<string>",
+                      "pppObservationCode" : "<string>",
+                      "previousTrainingInvestment" : "<string>",
+                      "professionalRegistrationNumber" : "<string>",
+                      "rehabilitated" : "<string>",
+                      "resourcesForJob" : "<string>",
+                      "rne" : "<string>",
+                      "rneEmissionDate" : "<string>",
+                      "rneEmitterAgency" : "<string>",
+                      "rneExpirationDate" : "<string>",
+                      "rowState" : "<string>",
+                      "scriptTag" : "<string>",
+                      "sex" : "<string>",
+                      "shadeRace" : "<string>",
+                      "smoker" : "<string>",
+                      "socialName" : "<string>",
+                      "state" : "<string>",
+                      "street" : "<string>",
+                      "streetTypeCode" : "<string>",
+                      "student" : "<string>",
+                      "teacher" : "<string>",
+                      "userCode" : "<string>",
+                      "validRow" : "<string>",
+                      "visaType" : "<string>",
+                      "workCard" : "<string>",
+                      "workCardEmissionDate" : "<string>",
+                      "workCardEmitterState" : "<string>",
+                      "workCardExpirationDate" : "<string>",
+                      "workCardSerialNumber" : "<string>"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "v1", "persons", "{id}" ],
+        "summary" : "Person Put",
+        "description" : "Person Put",
+        "operationId" : "personPut",
+        "requestBody" : {
+          "content" : {
+            "application/x-www-form-urlencoded" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : { }
+              },
+              "examples" : {
+                "Person Put" : {
+                  "value" : { }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "CHAPA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODFREGUESIA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODIGOMX" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODIGOPT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODORGAOCLASSE" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODPOSTAL" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODUFREGISTRO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CURP" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTEMISSAOCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTEMISSAORIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTVALIDADECARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTVENCIDENTPT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "EMAILPESSOAL" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "IDBIOMETRIA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NROINT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NUMEROCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NUMERORIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "ORGEMISSORRIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "ORGEXPCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "PRIMEIRONOME" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "SOBRENOMEMAE" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "SOBRENOMEPAI" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "_expandables" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "object",
+                        "properties" : {
+                          "disablePerson" : {
+                            "type" : "string",
+                            "example" : "ea"
+                          }
+                        }
+                      },
+                      "example" : [ {
+                        "disablePerson" : "ea"
+                      }, {
+                        "disablePerson" : "in esse labore sint"
+                      } ]
+                    },
+                    "accessibilityFeaturesForJobLocal" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "adjustsImageSize" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "age" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "arrivalDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "bibliosUser" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "birth" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "blindPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "bloodType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilConditionClassification" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilConsort" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilianChildren" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilianChildrenNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "candidate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cep" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "city" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cityCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "code" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "company" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "complement" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "country" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "countryId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cpf" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "curriculumApprovalDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deafPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deathCertificateNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deceaseDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deceased" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "disabled" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "district" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "documentImageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "documentReverseSideImageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicense" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseFirstEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "educationalLevel" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCardDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCardEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralSection" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralWard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "email" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "employee" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "fax" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "firstJobYear" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "formerEmployee" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "homeState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "image" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "imageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "immigrationDecree" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "indefiniteTermResidence" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "intellectualImpairedPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "jobCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "letterModel19" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "location" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "maritalState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "mentallyImpairedPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryCertificateEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryCertificateEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryDischargeCertificate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryDivision" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryGrade" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryRegion" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militarySituation" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "mutePerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "name" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nationality" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nativeCountry" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalisationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalisationGatehouse" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalized" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalness" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalnessCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "neighborhoodTypeCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nickname" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nit" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "number" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "occupationCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "personNote" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber1" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber2" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber3" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "pppObservationCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "previousTrainingInvestment" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "professionalRegistrationNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rehabilitated" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "resourcesForJob" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rne" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rowState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "scriptTag" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "sex" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "shadeRace" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "smoker" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "socialName" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "state" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "street" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "streetTypeCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "student" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "teacher" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "userCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "validRow" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "visaType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardSerialNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    }
+                  }
+                },
+                "examples" : {
+                  "OK" : {
+                    "value" : {
+                      "CHAPA" : "<string>",
+                      "CODFREGUESIA" : "<string>",
+                      "CODIGOMX" : "<string>",
+                      "CODIGOPT" : "<string>",
+                      "CODORGAOCLASSE" : "<string>",
+                      "CODPOSTAL" : "<string>",
+                      "CODUFREGISTRO" : "<string>",
+                      "CURP" : "<string>",
+                      "DTEMISSAOCARTCIDADAO" : "<string>",
+                      "DTEMISSAORIC" : "<string>",
+                      "DTVALIDADECARTCIDADAO" : "<string>",
+                      "DTVENCIDENTPT" : "<string>",
+                      "EMAILPESSOAL" : "<string>",
+                      "IDBIOMETRIA" : "<string>",
+                      "NROINT" : "<string>",
+                      "NUMEROCARTCIDADAO" : "<string>",
+                      "NUMERORIC" : "<string>",
+                      "ORGEMISSORRIC" : "<string>",
+                      "ORGEXPCARTCIDADAO" : "<string>",
+                      "PRIMEIRONOME" : "<string>",
+                      "SOBRENOMEMAE" : "<string>",
+                      "SOBRENOMEPAI" : "<string>",
+                      "_expandables" : [ {
+                        "disablePerson" : "ea"
+                      }, {
+                        "disablePerson" : "in esse labore sint"
+                      } ],
+                      "accessibilityFeaturesForJobLocal" : "<string>",
+                      "adjustsImageSize" : "<string>",
+                      "age" : "<string>",
+                      "arrivalDate" : "<string>",
+                      "bibliosUser" : "<string>",
+                      "birth" : "<string>",
+                      "blindPerson" : "<string>",
+                      "bloodType" : "<string>",
+                      "brazilConditionClassification" : "<string>",
+                      "brazilConsort" : "<string>",
+                      "brazilianChildren" : "<string>",
+                      "brazilianChildrenNumber" : "<string>",
+                      "candidate" : "<string>",
+                      "cep" : "<string>",
+                      "city" : "<string>",
+                      "cityCode" : "<string>",
+                      "code" : "<string>",
+                      "company" : "<string>",
+                      "complement" : "<string>",
+                      "country" : "<string>",
+                      "countryId" : "<string>",
+                      "cpf" : "<string>",
+                      "curriculumApprovalDate" : "<string>",
+                      "deafPerson" : "<string>",
+                      "deathCertificateNumber" : "<string>",
+                      "deceaseDate" : "<string>",
+                      "deceased" : "<string>",
+                      "disabled" : "<string>",
+                      "district" : "<string>",
+                      "documentImageId" : "<string>",
+                      "documentReverseSideImageId" : "<string>",
+                      "driversLicense" : "<string>",
+                      "driversLicenseEmissionDate" : "<string>",
+                      "driversLicenseEmitterAgency" : "<string>",
+                      "driversLicenseEmitterState" : "<string>",
+                      "driversLicenseExpirationDate" : "<string>",
+                      "driversLicenseFirstEmissionDate" : "<string>",
+                      "driversLicenseType" : "<string>",
+                      "educationalLevel" : "<string>",
+                      "electoralCard" : "<string>",
+                      "electoralCardDate" : "<string>",
+                      "electoralCardEmitterState" : "<string>",
+                      "electoralSection" : "<string>",
+                      "electoralWard" : "<string>",
+                      "email" : "<string>",
+                      "employee" : "<string>",
+                      "fax" : "<string>",
+                      "firstJobYear" : "<string>",
+                      "formerEmployee" : "<string>",
+                      "homeState" : "<string>",
+                      "identityNumber" : "<string>",
+                      "identityNumberEmissionDate" : "<string>",
+                      "identityNumberEmitterAgency" : "<string>",
+                      "identityNumberEmitterState" : "<string>",
+                      "image" : "<string>",
+                      "imageId" : "<string>",
+                      "immigrationDecree" : "<string>",
+                      "indefiniteTermResidence" : "<string>",
+                      "intellectualImpairedPerson" : "<string>",
+                      "jobCode" : "<string>",
+                      "letterModel19" : "<string>",
+                      "location" : "<string>",
+                      "maritalState" : "<string>",
+                      "mentallyImpairedPerson" : "<string>",
+                      "militaryCertificateEmissionDate" : "<string>",
+                      "militaryCertificateEmitterAgency" : "<string>",
+                      "militaryDischargeCertificate" : "<string>",
+                      "militaryDivision" : "<string>",
+                      "militaryGrade" : "<string>",
+                      "militaryRegion" : "<string>",
+                      "militarySituation" : "<string>",
+                      "mutePerson" : "<string>",
+                      "name" : "<string>",
+                      "nationality" : "<string>",
+                      "nativeCountry" : "<string>",
+                      "naturalisationDate" : "<string>",
+                      "naturalisationGatehouse" : "<string>",
+                      "naturalized" : "<string>",
+                      "naturalness" : "<string>",
+                      "naturalnessCode" : "<string>",
+                      "neighborhoodTypeCode" : "<string>",
+                      "nickname" : "<string>",
+                      "nit" : "<string>",
+                      "number" : "<string>",
+                      "occupationCode" : "<string>",
+                      "passportEmissionDate" : "<string>",
+                      "passportExpirationDate" : "<string>",
+                      "passportNumber" : "<string>",
+                      "personNote" : "<string>",
+                      "phoneNumber1" : "<string>",
+                      "phoneNumber2" : "<string>",
+                      "phoneNumber3" : "<string>",
+                      "pppObservationCode" : "<string>",
+                      "previousTrainingInvestment" : "<string>",
+                      "professionalRegistrationNumber" : "<string>",
+                      "rehabilitated" : "<string>",
+                      "resourcesForJob" : "<string>",
+                      "rne" : "<string>",
+                      "rneEmissionDate" : "<string>",
+                      "rneEmitterAgency" : "<string>",
+                      "rneExpirationDate" : "<string>",
+                      "rowState" : "<string>",
+                      "scriptTag" : "<string>",
+                      "sex" : "<string>",
+                      "shadeRace" : "<string>",
+                      "smoker" : "<string>",
+                      "socialName" : "<string>",
+                      "state" : "<string>",
+                      "street" : "<string>",
+                      "streetTypeCode" : "<string>",
+                      "student" : "<string>",
+                      "teacher" : "<string>",
+                      "userCode" : "<string>",
+                      "validRow" : "<string>",
+                      "visaType" : "<string>",
+                      "workCard" : "<string>",
+                      "workCardEmissionDate" : "<string>",
+                      "workCardEmitterState" : "<string>",
+                      "workCardExpirationDate" : "<string>",
+                      "workCardSerialNumber" : "<string>"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "v1", "persons", "{id}" ],
+        "summary" : "Person Delete",
+        "description" : "Person Delete",
+        "operationId" : "personDelete",
+        "responses" : {
+          "204" : {
+            "description" : "No Content",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "CHAPA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODFREGUESIA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODIGOMX" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODIGOPT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODORGAOCLASSE" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODPOSTAL" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODUFREGISTRO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CURP" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTEMISSAOCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTEMISSAORIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTVALIDADECARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTVENCIDENTPT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "EMAILPESSOAL" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "IDBIOMETRIA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NROINT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NUMEROCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NUMERORIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "ORGEMISSORRIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "ORGEXPCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "PRIMEIRONOME" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "SOBRENOMEMAE" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "SOBRENOMEPAI" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "_expandables" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "object",
+                        "properties" : {
+                          "disablePerson" : {
+                            "type" : "string",
+                            "example" : "ea"
+                          }
+                        }
+                      },
+                      "example" : [ {
+                        "disablePerson" : "ea"
+                      }, {
+                        "disablePerson" : "in esse labore sint"
+                      } ]
+                    },
+                    "accessibilityFeaturesForJobLocal" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "adjustsImageSize" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "age" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "arrivalDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "bibliosUser" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "birth" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "blindPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "bloodType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilConditionClassification" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilConsort" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilianChildren" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilianChildrenNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "candidate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cep" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "city" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cityCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "code" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "company" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "complement" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "country" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "countryId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cpf" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "curriculumApprovalDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deafPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deathCertificateNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deceaseDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deceased" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "disabled" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "district" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "documentImageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "documentReverseSideImageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicense" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseFirstEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "educationalLevel" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCardDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCardEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralSection" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralWard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "email" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "employee" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "fax" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "firstJobYear" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "formerEmployee" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "homeState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "image" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "imageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "immigrationDecree" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "indefiniteTermResidence" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "intellectualImpairedPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "jobCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "letterModel19" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "location" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "maritalState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "mentallyImpairedPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryCertificateEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryCertificateEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryDischargeCertificate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryDivision" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryGrade" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryRegion" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militarySituation" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "mutePerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "name" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nationality" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nativeCountry" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalisationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalisationGatehouse" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalized" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalness" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalnessCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "neighborhoodTypeCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nickname" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nit" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "number" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "occupationCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "personNote" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber1" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber2" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber3" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "pppObservationCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "previousTrainingInvestment" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "professionalRegistrationNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rehabilitated" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "resourcesForJob" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rne" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rowState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "scriptTag" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "sex" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "shadeRace" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "smoker" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "socialName" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "state" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "street" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "streetTypeCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "student" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "teacher" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "userCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "validRow" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "visaType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardSerialNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    }
+                  }
+                },
+                "examples" : {
+                  "No Content" : {
+                    "value" : {
+                      "CHAPA" : "<string>",
+                      "CODFREGUESIA" : "<string>",
+                      "CODIGOMX" : "<string>",
+                      "CODIGOPT" : "<string>",
+                      "CODORGAOCLASSE" : "<string>",
+                      "CODPOSTAL" : "<string>",
+                      "CODUFREGISTRO" : "<string>",
+                      "CURP" : "<string>",
+                      "DTEMISSAOCARTCIDADAO" : "<string>",
+                      "DTEMISSAORIC" : "<string>",
+                      "DTVALIDADECARTCIDADAO" : "<string>",
+                      "DTVENCIDENTPT" : "<string>",
+                      "EMAILPESSOAL" : "<string>",
+                      "IDBIOMETRIA" : "<string>",
+                      "NROINT" : "<string>",
+                      "NUMEROCARTCIDADAO" : "<string>",
+                      "NUMERORIC" : "<string>",
+                      "ORGEMISSORRIC" : "<string>",
+                      "ORGEXPCARTCIDADAO" : "<string>",
+                      "PRIMEIRONOME" : "<string>",
+                      "SOBRENOMEMAE" : "<string>",
+                      "SOBRENOMEPAI" : "<string>",
+                      "_expandables" : [ {
+                        "disablePerson" : "ea"
+                      }, {
+                        "disablePerson" : "in esse labore sint"
+                      } ],
+                      "accessibilityFeaturesForJobLocal" : "<string>",
+                      "adjustsImageSize" : "<string>",
+                      "age" : "<string>",
+                      "arrivalDate" : "<string>",
+                      "bibliosUser" : "<string>",
+                      "birth" : "<string>",
+                      "blindPerson" : "<string>",
+                      "bloodType" : "<string>",
+                      "brazilConditionClassification" : "<string>",
+                      "brazilConsort" : "<string>",
+                      "brazilianChildren" : "<string>",
+                      "brazilianChildrenNumber" : "<string>",
+                      "candidate" : "<string>",
+                      "cep" : "<string>",
+                      "city" : "<string>",
+                      "cityCode" : "<string>",
+                      "code" : "<string>",
+                      "company" : "<string>",
+                      "complement" : "<string>",
+                      "country" : "<string>",
+                      "countryId" : "<string>",
+                      "cpf" : "<string>",
+                      "curriculumApprovalDate" : "<string>",
+                      "deafPerson" : "<string>",
+                      "deathCertificateNumber" : "<string>",
+                      "deceaseDate" : "<string>",
+                      "deceased" : "<string>",
+                      "disabled" : "<string>",
+                      "district" : "<string>",
+                      "documentImageId" : "<string>",
+                      "documentReverseSideImageId" : "<string>",
+                      "driversLicense" : "<string>",
+                      "driversLicenseEmissionDate" : "<string>",
+                      "driversLicenseEmitterAgency" : "<string>",
+                      "driversLicenseEmitterState" : "<string>",
+                      "driversLicenseExpirationDate" : "<string>",
+                      "driversLicenseFirstEmissionDate" : "<string>",
+                      "driversLicenseType" : "<string>",
+                      "educationalLevel" : "<string>",
+                      "electoralCard" : "<string>",
+                      "electoralCardDate" : "<string>",
+                      "electoralCardEmitterState" : "<string>",
+                      "electoralSection" : "<string>",
+                      "electoralWard" : "<string>",
+                      "email" : "<string>",
+                      "employee" : "<string>",
+                      "fax" : "<string>",
+                      "firstJobYear" : "<string>",
+                      "formerEmployee" : "<string>",
+                      "homeState" : "<string>",
+                      "identityNumber" : "<string>",
+                      "identityNumberEmissionDate" : "<string>",
+                      "identityNumberEmitterAgency" : "<string>",
+                      "identityNumberEmitterState" : "<string>",
+                      "image" : "<string>",
+                      "imageId" : "<string>",
+                      "immigrationDecree" : "<string>",
+                      "indefiniteTermResidence" : "<string>",
+                      "intellectualImpairedPerson" : "<string>",
+                      "jobCode" : "<string>",
+                      "letterModel19" : "<string>",
+                      "location" : "<string>",
+                      "maritalState" : "<string>",
+                      "mentallyImpairedPerson" : "<string>",
+                      "militaryCertificateEmissionDate" : "<string>",
+                      "militaryCertificateEmitterAgency" : "<string>",
+                      "militaryDischargeCertificate" : "<string>",
+                      "militaryDivision" : "<string>",
+                      "militaryGrade" : "<string>",
+                      "militaryRegion" : "<string>",
+                      "militarySituation" : "<string>",
+                      "mutePerson" : "<string>",
+                      "name" : "<string>",
+                      "nationality" : "<string>",
+                      "nativeCountry" : "<string>",
+                      "naturalisationDate" : "<string>",
+                      "naturalisationGatehouse" : "<string>",
+                      "naturalized" : "<string>",
+                      "naturalness" : "<string>",
+                      "naturalnessCode" : "<string>",
+                      "neighborhoodTypeCode" : "<string>",
+                      "nickname" : "<string>",
+                      "nit" : "<string>",
+                      "number" : "<string>",
+                      "occupationCode" : "<string>",
+                      "passportEmissionDate" : "<string>",
+                      "passportExpirationDate" : "<string>",
+                      "passportNumber" : "<string>",
+                      "personNote" : "<string>",
+                      "phoneNumber1" : "<string>",
+                      "phoneNumber2" : "<string>",
+                      "phoneNumber3" : "<string>",
+                      "pppObservationCode" : "<string>",
+                      "previousTrainingInvestment" : "<string>",
+                      "professionalRegistrationNumber" : "<string>",
+                      "rehabilitated" : "<string>",
+                      "resourcesForJob" : "<string>",
+                      "rne" : "<string>",
+                      "rneEmissionDate" : "<string>",
+                      "rneEmitterAgency" : "<string>",
+                      "rneExpirationDate" : "<string>",
+                      "rowState" : "<string>",
+                      "scriptTag" : "<string>",
+                      "sex" : "<string>",
+                      "shadeRace" : "<string>",
+                      "smoker" : "<string>",
+                      "socialName" : "<string>",
+                      "state" : "<string>",
+                      "street" : "<string>",
+                      "streetTypeCode" : "<string>",
+                      "student" : "<string>",
+                      "teacher" : "<string>",
+                      "userCode" : "<string>",
+                      "validRow" : "<string>",
+                      "visaType" : "<string>",
+                      "workCard" : "<string>",
+                      "workCardEmissionDate" : "<string>",
+                      "workCardEmitterState" : "<string>",
+                      "workCardExpirationDate" : "<string>",
+                      "workCardSerialNumber" : "<string>"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch" : {
+        "tags" : [ "v1", "persons", "{id}" ],
+        "summary" : "Person Patch",
+        "description" : "Person Patch",
+        "operationId" : "personPatch",
+        "requestBody" : {
+          "content" : {
+            "application/x-www-form-urlencoded" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : { }
+              },
+              "examples" : {
+                "Person Patch" : {
+                  "value" : { }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "CHAPA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODFREGUESIA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODIGOMX" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODIGOPT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODORGAOCLASSE" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODPOSTAL" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CODUFREGISTRO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "CURP" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTEMISSAOCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTEMISSAORIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTVALIDADECARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "DTVENCIDENTPT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "EMAILPESSOAL" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "IDBIOMETRIA" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NROINT" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NUMEROCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "NUMERORIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "ORGEMISSORRIC" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "ORGEXPCARTCIDADAO" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "PRIMEIRONOME" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "SOBRENOMEMAE" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "SOBRENOMEPAI" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "_expandables" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "object",
+                        "properties" : {
+                          "disablePerson" : {
+                            "type" : "string",
+                            "example" : "ea"
+                          }
+                        }
+                      },
+                      "example" : [ {
+                        "disablePerson" : "ea"
+                      }, {
+                        "disablePerson" : "in esse labore sint"
+                      } ]
+                    },
+                    "accessibilityFeaturesForJobLocal" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "adjustsImageSize" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "age" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "arrivalDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "bibliosUser" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "birth" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "blindPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "bloodType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilConditionClassification" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilConsort" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilianChildren" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "brazilianChildrenNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "candidate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cep" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "city" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cityCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "code" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "company" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "complement" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "country" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "countryId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "cpf" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "curriculumApprovalDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deafPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deathCertificateNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deceaseDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "deceased" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "disabled" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "district" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "documentImageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "documentReverseSideImageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicense" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseFirstEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "driversLicenseType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "educationalLevel" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCardDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralCardEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralSection" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "electoralWard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "email" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "employee" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "fax" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "firstJobYear" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "formerEmployee" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "homeState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "identityNumberEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "image" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "imageId" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "immigrationDecree" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "indefiniteTermResidence" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "intellectualImpairedPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "jobCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "letterModel19" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "location" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "maritalState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "mentallyImpairedPerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryCertificateEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryCertificateEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryDischargeCertificate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryDivision" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryGrade" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militaryRegion" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "militarySituation" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "mutePerson" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "name" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nationality" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nativeCountry" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalisationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalisationGatehouse" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalized" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalness" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "naturalnessCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "neighborhoodTypeCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nickname" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "nit" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "number" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "occupationCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "passportNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "personNote" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber1" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber2" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "phoneNumber3" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "pppObservationCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "previousTrainingInvestment" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "professionalRegistrationNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rehabilitated" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "resourcesForJob" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rne" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneEmitterAgency" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rneExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "rowState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "scriptTag" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "sex" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "shadeRace" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "smoker" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "socialName" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "state" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "street" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "streetTypeCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "student" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "teacher" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "userCode" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "validRow" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "visaType" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCard" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardEmissionDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardEmitterState" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardExpirationDate" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    },
+                    "workCardSerialNumber" : {
+                      "type" : "string",
+                      "example" : "<string>"
+                    }
+                  }
+                },
+                "examples" : {
+                  "OK" : {
+                    "value" : {
+                      "CHAPA" : "<string>",
+                      "CODFREGUESIA" : "<string>",
+                      "CODIGOMX" : "<string>",
+                      "CODIGOPT" : "<string>",
+                      "CODORGAOCLASSE" : "<string>",
+                      "CODPOSTAL" : "<string>",
+                      "CODUFREGISTRO" : "<string>",
+                      "CURP" : "<string>",
+                      "DTEMISSAOCARTCIDADAO" : "<string>",
+                      "DTEMISSAORIC" : "<string>",
+                      "DTVALIDADECARTCIDADAO" : "<string>",
+                      "DTVENCIDENTPT" : "<string>",
+                      "EMAILPESSOAL" : "<string>",
+                      "IDBIOMETRIA" : "<string>",
+                      "NROINT" : "<string>",
+                      "NUMEROCARTCIDADAO" : "<string>",
+                      "NUMERORIC" : "<string>",
+                      "ORGEMISSORRIC" : "<string>",
+                      "ORGEXPCARTCIDADAO" : "<string>",
+                      "PRIMEIRONOME" : "<string>",
+                      "SOBRENOMEMAE" : "<string>",
+                      "SOBRENOMEPAI" : "<string>",
+                      "_expandables" : [ {
+                        "disablePerson" : "ea"
+                      }, {
+                        "disablePerson" : "in esse labore sint"
+                      } ],
+                      "accessibilityFeaturesForJobLocal" : "<string>",
+                      "adjustsImageSize" : "<string>",
+                      "age" : "<string>",
+                      "arrivalDate" : "<string>",
+                      "bibliosUser" : "<string>",
+                      "birth" : "<string>",
+                      "blindPerson" : "<string>",
+                      "bloodType" : "<string>",
+                      "brazilConditionClassification" : "<string>",
+                      "brazilConsort" : "<string>",
+                      "brazilianChildren" : "<string>",
+                      "brazilianChildrenNumber" : "<string>",
+                      "candidate" : "<string>",
+                      "cep" : "<string>",
+                      "city" : "<string>",
+                      "cityCode" : "<string>",
+                      "code" : "<string>",
+                      "company" : "<string>",
+                      "complement" : "<string>",
+                      "country" : "<string>",
+                      "countryId" : "<string>",
+                      "cpf" : "<string>",
+                      "curriculumApprovalDate" : "<string>",
+                      "deafPerson" : "<string>",
+                      "deathCertificateNumber" : "<string>",
+                      "deceaseDate" : "<string>",
+                      "deceased" : "<string>",
+                      "disabled" : "<string>",
+                      "district" : "<string>",
+                      "documentImageId" : "<string>",
+                      "documentReverseSideImageId" : "<string>",
+                      "driversLicense" : "<string>",
+                      "driversLicenseEmissionDate" : "<string>",
+                      "driversLicenseEmitterAgency" : "<string>",
+                      "driversLicenseEmitterState" : "<string>",
+                      "driversLicenseExpirationDate" : "<string>",
+                      "driversLicenseFirstEmissionDate" : "<string>",
+                      "driversLicenseType" : "<string>",
+                      "educationalLevel" : "<string>",
+                      "electoralCard" : "<string>",
+                      "electoralCardDate" : "<string>",
+                      "electoralCardEmitterState" : "<string>",
+                      "electoralSection" : "<string>",
+                      "electoralWard" : "<string>",
+                      "email" : "<string>",
+                      "employee" : "<string>",
+                      "fax" : "<string>",
+                      "firstJobYear" : "<string>",
+                      "formerEmployee" : "<string>",
+                      "homeState" : "<string>",
+                      "identityNumber" : "<string>",
+                      "identityNumberEmissionDate" : "<string>",
+                      "identityNumberEmitterAgency" : "<string>",
+                      "identityNumberEmitterState" : "<string>",
+                      "image" : "<string>",
+                      "imageId" : "<string>",
+                      "immigrationDecree" : "<string>",
+                      "indefiniteTermResidence" : "<string>",
+                      "intellectualImpairedPerson" : "<string>",
+                      "jobCode" : "<string>",
+                      "letterModel19" : "<string>",
+                      "location" : "<string>",
+                      "maritalState" : "<string>",
+                      "mentallyImpairedPerson" : "<string>",
+                      "militaryCertificateEmissionDate" : "<string>",
+                      "militaryCertificateEmitterAgency" : "<string>",
+                      "militaryDischargeCertificate" : "<string>",
+                      "militaryDivision" : "<string>",
+                      "militaryGrade" : "<string>",
+                      "militaryRegion" : "<string>",
+                      "militarySituation" : "<string>",
+                      "mutePerson" : "<string>",
+                      "name" : "<string>",
+                      "nationality" : "<string>",
+                      "nativeCountry" : "<string>",
+                      "naturalisationDate" : "<string>",
+                      "naturalisationGatehouse" : "<string>",
+                      "naturalized" : "<string>",
+                      "naturalness" : "<string>",
+                      "naturalnessCode" : "<string>",
+                      "neighborhoodTypeCode" : "<string>",
+                      "nickname" : "<string>",
+                      "nit" : "<string>",
+                      "number" : "<string>",
+                      "occupationCode" : "<string>",
+                      "passportEmissionDate" : "<string>",
+                      "passportExpirationDate" : "<string>",
+                      "passportNumber" : "<string>",
+                      "personNote" : "<string>",
+                      "phoneNumber1" : "<string>",
+                      "phoneNumber2" : "<string>",
+                      "phoneNumber3" : "<string>",
+                      "pppObservationCode" : "<string>",
+                      "previousTrainingInvestment" : "<string>",
+                      "professionalRegistrationNumber" : "<string>",
+                      "rehabilitated" : "<string>",
+                      "resourcesForJob" : "<string>",
+                      "rne" : "<string>",
+                      "rneEmissionDate" : "<string>",
+                      "rneEmitterAgency" : "<string>",
+                      "rneExpirationDate" : "<string>",
+                      "rowState" : "<string>",
+                      "scriptTag" : "<string>",
+                      "sex" : "<string>",
+                      "shadeRace" : "<string>",
+                      "smoker" : "<string>",
+                      "socialName" : "<string>",
+                      "state" : "<string>",
+                      "street" : "<string>",
+                      "streetTypeCode" : "<string>",
+                      "student" : "<string>",
+                      "teacher" : "<string>",
+                      "userCode" : "<string>",
+                      "validRow" : "<string>",
+                      "visaType" : "<string>",
+                      "workCard" : "<string>",
+                      "workCardEmissionDate" : "<string>",
+                      "workCardEmitterState" : "<string>",
+                      "workCardExpirationDate" : "<string>",
+                      "workCardSerialNumber" : "<string>"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "parameters" : [ {
+        "name" : "id",
+        "in" : "path",
+        "required" : true,
+        "schema" : {
+          "type" : "string",
+          "example" : "<string>"
+        },
+        "description" : "(Required) "
+      } ]
+    },
+    "/rh/v1/persons" : {
+      "get" : {
+        "tags" : [ "v1", "persons" ],
+        "summary" : "Person Get All Copy",
+        "description" : "Person Get All Copy",
+        "operationId" : "personGetAllCopy",
+        "parameters" : [ {
+          "name" : "query.attributes",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.sortBy",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.sortOrder",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.startIndex",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<integer>"
+          }
+        }, {
+          "name" : "query.count",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<integer>"
+          }
+        }, {
+          "name" : "query.expand",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.fields",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.filter",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : ""
+          }
+        }, {
+          "name" : "query.order",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<string>"
+          }
+        }, {
+          "name" : "query.page",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<integer>"
+          }
+        }, {
+          "name" : "query.pageSize",
+          "in" : "query",
+          "schema" : {
+            "type" : "string",
+            "example" : "<integer>"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "hasNext" : {
+                      "type" : "string",
+                      "example" : "<boolean>"
+                    },
+                    "items" : {
+                      "type" : "array",
+                      "items" : {
+                        "type" : "object",
+                        "properties" : {
+                          "CHAPA" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "CODFREGUESIA" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "CODIGOMX" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "CODIGOPT" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "CODORGAOCLASSE" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "CODPOSTAL" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "CODUFREGISTRO" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "CURP" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "DTEMISSAOCARTCIDADAO" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "DTEMISSAORIC" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "DTVALIDADECARTCIDADAO" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "DTVENCIDENTPT" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "EMAILPESSOAL" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "IDBIOMETRIA" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "NROINT" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "NUMEROCARTCIDADAO" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "NUMERORIC" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "ORGEMISSORRIC" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "ORGEXPCARTCIDADAO" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "PRIMEIRONOME" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "SOBRENOMEMAE" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "SOBRENOMEPAI" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "_expandables" : {
+                            "type" : "array",
+                            "items" : {
+                              "type" : "object",
+                              "properties" : {
+                                "disablePerson" : {
+                                  "type" : "string",
+                                  "example" : "exercitation dolore non magna"
+                                }
+                              }
+                            },
+                            "example" : [ {
+                              "disablePerson" : "exercitation dolore non magna"
+                            }, {
+                              "disablePerson" : "culpa est sed"
+                            } ]
+                          },
+                          "accessibilityFeaturesForJobLocal" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "adjustsImageSize" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "age" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "arrivalDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "bibliosUser" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "birth" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "blindPerson" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "bloodType" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "brazilConditionClassification" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "brazilConsort" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "brazilianChildren" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "brazilianChildrenNumber" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "candidate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "cep" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "city" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "cityCode" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "code" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "company" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "complement" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "country" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "countryId" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "cpf" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "curriculumApprovalDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "deafPerson" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "deathCertificateNumber" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "deceaseDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "deceased" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "disabled" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "district" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "documentImageId" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "documentReverseSideImageId" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "driversLicense" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "driversLicenseEmissionDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "driversLicenseEmitterAgency" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "driversLicenseEmitterState" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "driversLicenseExpirationDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "driversLicenseFirstEmissionDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "driversLicenseType" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "educationalLevel" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "electoralCard" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "electoralCardDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "electoralCardEmitterState" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "electoralSection" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "electoralWard" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "email" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "employee" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "fax" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "firstJobYear" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "formerEmployee" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "homeState" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "identityNumber" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "identityNumberEmissionDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "identityNumberEmitterAgency" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "identityNumberEmitterState" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "image" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "imageId" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "immigrationDecree" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "indefiniteTermResidence" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "intellectualImpairedPerson" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "jobCode" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "letterModel19" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "location" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "maritalState" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "mentallyImpairedPerson" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "militaryCertificateEmissionDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "militaryCertificateEmitterAgency" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "militaryDischargeCertificate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "militaryDivision" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "militaryGrade" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "militaryRegion" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "militarySituation" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "mutePerson" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "name" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "nationality" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "nativeCountry" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "naturalisationDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "naturalisationGatehouse" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "naturalized" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "naturalness" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "naturalnessCode" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "neighborhoodTypeCode" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "nickname" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "nit" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "number" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "occupationCode" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "passportEmissionDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "passportExpirationDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "passportNumber" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "personNote" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "phoneNumber1" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "phoneNumber2" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "phoneNumber3" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "pppObservationCode" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "previousTrainingInvestment" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "professionalRegistrationNumber" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "rehabilitated" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "resourcesForJob" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "rne" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "rneEmissionDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "rneEmitterAgency" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "rneExpirationDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "rowState" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "scriptTag" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "sex" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "shadeRace" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "smoker" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "socialName" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "state" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "street" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "streetTypeCode" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "student" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "teacher" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "userCode" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "validRow" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "visaType" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "workCard" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "workCardEmissionDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "workCardEmitterState" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "workCardExpirationDate" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          },
+                          "workCardSerialNumber" : {
+                            "type" : "string",
+                            "example" : "<string>"
+                          }
+                        }
+                      },
+                      "example" : [ {
+                        "CHAPA" : "<string>",
+                        "CODFREGUESIA" : "<string>",
+                        "CODIGOMX" : "<string>",
+                        "CODIGOPT" : "<string>",
+                        "CODORGAOCLASSE" : "<string>",
+                        "CODPOSTAL" : "<string>",
+                        "CODUFREGISTRO" : "<string>",
+                        "CURP" : "<string>",
+                        "DTEMISSAOCARTCIDADAO" : "<string>",
+                        "DTEMISSAORIC" : "<string>",
+                        "DTVALIDADECARTCIDADAO" : "<string>",
+                        "DTVENCIDENTPT" : "<string>",
+                        "EMAILPESSOAL" : "<string>",
+                        "IDBIOMETRIA" : "<string>",
+                        "NROINT" : "<string>",
+                        "NUMEROCARTCIDADAO" : "<string>",
+                        "NUMERORIC" : "<string>",
+                        "ORGEMISSORRIC" : "<string>",
+                        "ORGEXPCARTCIDADAO" : "<string>",
+                        "PRIMEIRONOME" : "<string>",
+                        "SOBRENOMEMAE" : "<string>",
+                        "SOBRENOMEPAI" : "<string>",
+                        "_expandables" : [ {
+                          "disablePerson" : "exercitation dolore non magna"
+                        }, {
+                          "disablePerson" : "culpa est sed"
+                        } ],
+                        "accessibilityFeaturesForJobLocal" : "<string>",
+                        "adjustsImageSize" : "<string>",
+                        "age" : "<string>",
+                        "arrivalDate" : "<string>",
+                        "bibliosUser" : "<string>",
+                        "birth" : "<string>",
+                        "blindPerson" : "<string>",
+                        "bloodType" : "<string>",
+                        "brazilConditionClassification" : "<string>",
+                        "brazilConsort" : "<string>",
+                        "brazilianChildren" : "<string>",
+                        "brazilianChildrenNumber" : "<string>",
+                        "candidate" : "<string>",
+                        "cep" : "<string>",
+                        "city" : "<string>",
+                        "cityCode" : "<string>",
+                        "code" : "<string>",
+                        "company" : "<string>",
+                        "complement" : "<string>",
+                        "country" : "<string>",
+                        "countryId" : "<string>",
+                        "cpf" : "<string>",
+                        "curriculumApprovalDate" : "<string>",
+                        "deafPerson" : "<string>",
+                        "deathCertificateNumber" : "<string>",
+                        "deceaseDate" : "<string>",
+                        "deceased" : "<string>",
+                        "disabled" : "<string>",
+                        "district" : "<string>",
+                        "documentImageId" : "<string>",
+                        "documentReverseSideImageId" : "<string>",
+                        "driversLicense" : "<string>",
+                        "driversLicenseEmissionDate" : "<string>",
+                        "driversLicenseEmitterAgency" : "<string>",
+                        "driversLicenseEmitterState" : "<string>",
+                        "driversLicenseExpirationDate" : "<string>",
+                        "driversLicenseFirstEmissionDate" : "<string>",
+                        "driversLicenseType" : "<string>",
+                        "educationalLevel" : "<string>",
+                        "electoralCard" : "<string>",
+                        "electoralCardDate" : "<string>",
+                        "electoralCardEmitterState" : "<string>",
+                        "electoralSection" : "<string>",
+                        "electoralWard" : "<string>",
+                        "email" : "<string>",
+                        "employee" : "<string>",
+                        "fax" : "<string>",
+                        "firstJobYear" : "<string>",
+                        "formerEmployee" : "<string>",
+                        "homeState" : "<string>",
+                        "identityNumber" : "<string>",
+                        "identityNumberEmissionDate" : "<string>",
+                        "identityNumberEmitterAgency" : "<string>",
+                        "identityNumberEmitterState" : "<string>",
+                        "image" : "<string>",
+                        "imageId" : "<string>",
+                        "immigrationDecree" : "<string>",
+                        "indefiniteTermResidence" : "<string>",
+                        "intellectualImpairedPerson" : "<string>",
+                        "jobCode" : "<string>",
+                        "letterModel19" : "<string>",
+                        "location" : "<string>",
+                        "maritalState" : "<string>",
+                        "mentallyImpairedPerson" : "<string>",
+                        "militaryCertificateEmissionDate" : "<string>",
+                        "militaryCertificateEmitterAgency" : "<string>",
+                        "militaryDischargeCertificate" : "<string>",
+                        "militaryDivision" : "<string>",
+                        "militaryGrade" : "<string>",
+                        "militaryRegion" : "<string>",
+                        "militarySituation" : "<string>",
+                        "mutePerson" : "<string>",
+                        "name" : "<string>",
+                        "nationality" : "<string>",
+                        "nativeCountry" : "<string>",
+                        "naturalisationDate" : "<string>",
+                        "naturalisationGatehouse" : "<string>",
+                        "naturalized" : "<string>",
+                        "naturalness" : "<string>",
+                        "naturalnessCode" : "<string>",
+                        "neighborhoodTypeCode" : "<string>",
+                        "nickname" : "<string>",
+                        "nit" : "<string>",
+                        "number" : "<string>",
+                        "occupationCode" : "<string>",
+                        "passportEmissionDate" : "<string>",
+                        "passportExpirationDate" : "<string>",
+                        "passportNumber" : "<string>",
+                        "personNote" : "<string>",
+                        "phoneNumber1" : "<string>",
+                        "phoneNumber2" : "<string>",
+                        "phoneNumber3" : "<string>",
+                        "pppObservationCode" : "<string>",
+                        "previousTrainingInvestment" : "<string>",
+                        "professionalRegistrationNumber" : "<string>",
+                        "rehabilitated" : "<string>",
+                        "resourcesForJob" : "<string>",
+                        "rne" : "<string>",
+                        "rneEmissionDate" : "<string>",
+                        "rneEmitterAgency" : "<string>",
+                        "rneExpirationDate" : "<string>",
+                        "rowState" : "<string>",
+                        "scriptTag" : "<string>",
+                        "sex" : "<string>",
+                        "shadeRace" : "<string>",
+                        "smoker" : "<string>",
+                        "socialName" : "<string>",
+                        "state" : "<string>",
+                        "street" : "<string>",
+                        "streetTypeCode" : "<string>",
+                        "student" : "<string>",
+                        "teacher" : "<string>",
+                        "userCode" : "<string>",
+                        "validRow" : "<string>",
+                        "visaType" : "<string>",
+                        "workCard" : "<string>",
+                        "workCardEmissionDate" : "<string>",
+                        "workCardEmitterState" : "<string>",
+                        "workCardExpirationDate" : "<string>",
+                        "workCardSerialNumber" : "<string>"
+                      }, {
+                        "CHAPA" : "<string>",
+                        "CODFREGUESIA" : "<string>",
+                        "CODIGOMX" : "<string>",
+                        "CODIGOPT" : "<string>",
+                        "CODORGAOCLASSE" : "<string>",
+                        "CODPOSTAL" : "<string>",
+                        "CODUFREGISTRO" : "<string>",
+                        "CURP" : "<string>",
+                        "DTEMISSAOCARTCIDADAO" : "<string>",
+                        "DTEMISSAORIC" : "<string>",
+                        "DTVALIDADECARTCIDADAO" : "<string>",
+                        "DTVENCIDENTPT" : "<string>",
+                        "EMAILPESSOAL" : "<string>",
+                        "IDBIOMETRIA" : "<string>",
+                        "NROINT" : "<string>",
+                        "NUMEROCARTCIDADAO" : "<string>",
+                        "NUMERORIC" : "<string>",
+                        "ORGEMISSORRIC" : "<string>",
+                        "ORGEXPCARTCIDADAO" : "<string>",
+                        "PRIMEIRONOME" : "<string>",
+                        "SOBRENOMEMAE" : "<string>",
+                        "SOBRENOMEPAI" : "<string>",
+                        "_expandables" : [ {
+                          "disablePerson" : "velit Ut elit"
+                        }, {
+                          "disablePerson" : "aliquip sit"
+                        } ],
+                        "accessibilityFeaturesForJobLocal" : "<string>",
+                        "adjustsImageSize" : "<string>",
+                        "age" : "<string>",
+                        "arrivalDate" : "<string>",
+                        "bibliosUser" : "<string>",
+                        "birth" : "<string>",
+                        "blindPerson" : "<string>",
+                        "bloodType" : "<string>",
+                        "brazilConditionClassification" : "<string>",
+                        "brazilConsort" : "<string>",
+                        "brazilianChildren" : "<string>",
+                        "brazilianChildrenNumber" : "<string>",
+                        "candidate" : "<string>",
+                        "cep" : "<string>",
+                        "city" : "<string>",
+                        "cityCode" : "<string>",
+                        "code" : "<string>",
+                        "company" : "<string>",
+                        "complement" : "<string>",
+                        "country" : "<string>",
+                        "countryId" : "<string>",
+                        "cpf" : "<string>",
+                        "curriculumApprovalDate" : "<string>",
+                        "deafPerson" : "<string>",
+                        "deathCertificateNumber" : "<string>",
+                        "deceaseDate" : "<string>",
+                        "deceased" : "<string>",
+                        "disabled" : "<string>",
+                        "district" : "<string>",
+                        "documentImageId" : "<string>",
+                        "documentReverseSideImageId" : "<string>",
+                        "driversLicense" : "<string>",
+                        "driversLicenseEmissionDate" : "<string>",
+                        "driversLicenseEmitterAgency" : "<string>",
+                        "driversLicenseEmitterState" : "<string>",
+                        "driversLicenseExpirationDate" : "<string>",
+                        "driversLicenseFirstEmissionDate" : "<string>",
+                        "driversLicenseType" : "<string>",
+                        "educationalLevel" : "<string>",
+                        "electoralCard" : "<string>",
+                        "electoralCardDate" : "<string>",
+                        "electoralCardEmitterState" : "<string>",
+                        "electoralSection" : "<string>",
+                        "electoralWard" : "<string>",
+                        "email" : "<string>",
+                        "employee" : "<string>",
+                        "fax" : "<string>",
+                        "firstJobYear" : "<string>",
+                        "formerEmployee" : "<string>",
+                        "homeState" : "<string>",
+                        "identityNumber" : "<string>",
+                        "identityNumberEmissionDate" : "<string>",
+                        "identityNumberEmitterAgency" : "<string>",
+                        "identityNumberEmitterState" : "<string>",
+                        "image" : "<string>",
+                        "imageId" : "<string>",
+                        "immigrationDecree" : "<string>",
+                        "indefiniteTermResidence" : "<string>",
+                        "intellectualImpairedPerson" : "<string>",
+                        "jobCode" : "<string>",
+                        "letterModel19" : "<string>",
+                        "location" : "<string>",
+                        "maritalState" : "<string>",
+                        "mentallyImpairedPerson" : "<string>",
+                        "militaryCertificateEmissionDate" : "<string>",
+                        "militaryCertificateEmitterAgency" : "<string>",
+                        "militaryDischargeCertificate" : "<string>",
+                        "militaryDivision" : "<string>",
+                        "militaryGrade" : "<string>",
+                        "militaryRegion" : "<string>",
+                        "militarySituation" : "<string>",
+                        "mutePerson" : "<string>",
+                        "name" : "<string>",
+                        "nationality" : "<string>",
+                        "nativeCountry" : "<string>",
+                        "naturalisationDate" : "<string>",
+                        "naturalisationGatehouse" : "<string>",
+                        "naturalized" : "<string>",
+                        "naturalness" : "<string>",
+                        "naturalnessCode" : "<string>",
+                        "neighborhoodTypeCode" : "<string>",
+                        "nickname" : "<string>",
+                        "nit" : "<string>",
+                        "number" : "<string>",
+                        "occupationCode" : "<string>",
+                        "passportEmissionDate" : "<string>",
+                        "passportExpirationDate" : "<string>",
+                        "passportNumber" : "<string>",
+                        "personNote" : "<string>",
+                        "phoneNumber1" : "<string>",
+                        "phoneNumber2" : "<string>",
+                        "phoneNumber3" : "<string>",
+                        "pppObservationCode" : "<string>",
+                        "previousTrainingInvestment" : "<string>",
+                        "professionalRegistrationNumber" : "<string>",
+                        "rehabilitated" : "<string>",
+                        "resourcesForJob" : "<string>",
+                        "rne" : "<string>",
+                        "rneEmissionDate" : "<string>",
+                        "rneEmitterAgency" : "<string>",
+                        "rneExpirationDate" : "<string>",
+                        "rowState" : "<string>",
+                        "scriptTag" : "<string>",
+                        "sex" : "<string>",
+                        "shadeRace" : "<string>",
+                        "smoker" : "<string>",
+                        "socialName" : "<string>",
+                        "state" : "<string>",
+                        "street" : "<string>",
+                        "streetTypeCode" : "<string>",
+                        "student" : "<string>",
+                        "teacher" : "<string>",
+                        "userCode" : "<string>",
+                        "validRow" : "<string>",
+                        "visaType" : "<string>",
+                        "workCard" : "<string>",
+                        "workCardEmissionDate" : "<string>",
+                        "workCardEmitterState" : "<string>",
+                        "workCardExpirationDate" : "<string>",
+                        "workCardSerialNumber" : "<string>"
+                      } ]
+                    }
+                  }
+                },
+                "examples" : {
+                  "OK" : {
+                    "value" : {
+                      "hasNext" : "<boolean>",
+                      "items" : [ {
+                        "CHAPA" : "<string>",
+                        "CODFREGUESIA" : "<string>",
+                        "CODIGOMX" : "<string>",
+                        "CODIGOPT" : "<string>",
+                        "CODORGAOCLASSE" : "<string>",
+                        "CODPOSTAL" : "<string>",
+                        "CODUFREGISTRO" : "<string>",
+                        "CURP" : "<string>",
+                        "DTEMISSAOCARTCIDADAO" : "<string>",
+                        "DTEMISSAORIC" : "<string>",
+                        "DTVALIDADECARTCIDADAO" : "<string>",
+                        "DTVENCIDENTPT" : "<string>",
+                        "EMAILPESSOAL" : "<string>",
+                        "IDBIOMETRIA" : "<string>",
+                        "NROINT" : "<string>",
+                        "NUMEROCARTCIDADAO" : "<string>",
+                        "NUMERORIC" : "<string>",
+                        "ORGEMISSORRIC" : "<string>",
+                        "ORGEXPCARTCIDADAO" : "<string>",
+                        "PRIMEIRONOME" : "<string>",
+                        "SOBRENOMEMAE" : "<string>",
+                        "SOBRENOMEPAI" : "<string>",
+                        "_expandables" : [ {
+                          "disablePerson" : "exercitation dolore non magna"
+                        }, {
+                          "disablePerson" : "culpa est sed"
+                        } ],
+                        "accessibilityFeaturesForJobLocal" : "<string>",
+                        "adjustsImageSize" : "<string>",
+                        "age" : "<string>",
+                        "arrivalDate" : "<string>",
+                        "bibliosUser" : "<string>",
+                        "birth" : "<string>",
+                        "blindPerson" : "<string>",
+                        "bloodType" : "<string>",
+                        "brazilConditionClassification" : "<string>",
+                        "brazilConsort" : "<string>",
+                        "brazilianChildren" : "<string>",
+                        "brazilianChildrenNumber" : "<string>",
+                        "candidate" : "<string>",
+                        "cep" : "<string>",
+                        "city" : "<string>",
+                        "cityCode" : "<string>",
+                        "code" : "<string>",
+                        "company" : "<string>",
+                        "complement" : "<string>",
+                        "country" : "<string>",
+                        "countryId" : "<string>",
+                        "cpf" : "<string>",
+                        "curriculumApprovalDate" : "<string>",
+                        "deafPerson" : "<string>",
+                        "deathCertificateNumber" : "<string>",
+                        "deceaseDate" : "<string>",
+                        "deceased" : "<string>",
+                        "disabled" : "<string>",
+                        "district" : "<string>",
+                        "documentImageId" : "<string>",
+                        "documentReverseSideImageId" : "<string>",
+                        "driversLicense" : "<string>",
+                        "driversLicenseEmissionDate" : "<string>",
+                        "driversLicenseEmitterAgency" : "<string>",
+                        "driversLicenseEmitterState" : "<string>",
+                        "driversLicenseExpirationDate" : "<string>",
+                        "driversLicenseFirstEmissionDate" : "<string>",
+                        "driversLicenseType" : "<string>",
+                        "educationalLevel" : "<string>",
+                        "electoralCard" : "<string>",
+                        "electoralCardDate" : "<string>",
+                        "electoralCardEmitterState" : "<string>",
+                        "electoralSection" : "<string>",
+                        "electoralWard" : "<string>",
+                        "email" : "<string>",
+                        "employee" : "<string>",
+                        "fax" : "<string>",
+                        "firstJobYear" : "<string>",
+                        "formerEmployee" : "<string>",
+                        "homeState" : "<string>",
+                        "identityNumber" : "<string>",
+                        "identityNumberEmissionDate" : "<string>",
+                        "identityNumberEmitterAgency" : "<string>",
+                        "identityNumberEmitterState" : "<string>",
+                        "image" : "<string>",
+                        "imageId" : "<string>",
+                        "immigrationDecree" : "<string>",
+                        "indefiniteTermResidence" : "<string>",
+                        "intellectualImpairedPerson" : "<string>",
+                        "jobCode" : "<string>",
+                        "letterModel19" : "<string>",
+                        "location" : "<string>",
+                        "maritalState" : "<string>",
+                        "mentallyImpairedPerson" : "<string>",
+                        "militaryCertificateEmissionDate" : "<string>",
+                        "militaryCertificateEmitterAgency" : "<string>",
+                        "militaryDischargeCertificate" : "<string>",
+                        "militaryDivision" : "<string>",
+                        "militaryGrade" : "<string>",
+                        "militaryRegion" : "<string>",
+                        "militarySituation" : "<string>",
+                        "mutePerson" : "<string>",
+                        "name" : "<string>",
+                        "nationality" : "<string>",
+                        "nativeCountry" : "<string>",
+                        "naturalisationDate" : "<string>",
+                        "naturalisationGatehouse" : "<string>",
+                        "naturalized" : "<string>",
+                        "naturalness" : "<string>",
+                        "naturalnessCode" : "<string>",
+                        "neighborhoodTypeCode" : "<string>",
+                        "nickname" : "<string>",
+                        "nit" : "<string>",
+                        "number" : "<string>",
+                        "occupationCode" : "<string>",
+                        "passportEmissionDate" : "<string>",
+                        "passportExpirationDate" : "<string>",
+                        "passportNumber" : "<string>",
+                        "personNote" : "<string>",
+                        "phoneNumber1" : "<string>",
+                        "phoneNumber2" : "<string>",
+                        "phoneNumber3" : "<string>",
+                        "pppObservationCode" : "<string>",
+                        "previousTrainingInvestment" : "<string>",
+                        "professionalRegistrationNumber" : "<string>",
+                        "rehabilitated" : "<string>",
+                        "resourcesForJob" : "<string>",
+                        "rne" : "<string>",
+                        "rneEmissionDate" : "<string>",
+                        "rneEmitterAgency" : "<string>",
+                        "rneExpirationDate" : "<string>",
+                        "rowState" : "<string>",
+                        "scriptTag" : "<string>",
+                        "sex" : "<string>",
+                        "shadeRace" : "<string>",
+                        "smoker" : "<string>",
+                        "socialName" : "<string>",
+                        "state" : "<string>",
+                        "street" : "<string>",
+                        "streetTypeCode" : "<string>",
+                        "student" : "<string>",
+                        "teacher" : "<string>",
+                        "userCode" : "<string>",
+                        "validRow" : "<string>",
+                        "visaType" : "<string>",
+                        "workCard" : "<string>",
+                        "workCardEmissionDate" : "<string>",
+                        "workCardEmitterState" : "<string>",
+                        "workCardExpirationDate" : "<string>",
+                        "workCardSerialNumber" : "<string>"
+                      }, {
+                        "CHAPA" : "<string>",
+                        "CODFREGUESIA" : "<string>",
+                        "CODIGOMX" : "<string>",
+                        "CODIGOPT" : "<string>",
+                        "CODORGAOCLASSE" : "<string>",
+                        "CODPOSTAL" : "<string>",
+                        "CODUFREGISTRO" : "<string>",
+                        "CURP" : "<string>",
+                        "DTEMISSAOCARTCIDADAO" : "<string>",
+                        "DTEMISSAORIC" : "<string>",
+                        "DTVALIDADECARTCIDADAO" : "<string>",
+                        "DTVENCIDENTPT" : "<string>",
+                        "EMAILPESSOAL" : "<string>",
+                        "IDBIOMETRIA" : "<string>",
+                        "NROINT" : "<string>",
+                        "NUMEROCARTCIDADAO" : "<string>",
+                        "NUMERORIC" : "<string>",
+                        "ORGEMISSORRIC" : "<string>",
+                        "ORGEXPCARTCIDADAO" : "<string>",
+                        "PRIMEIRONOME" : "<string>",
+                        "SOBRENOMEMAE" : "<string>",
+                        "SOBRENOMEPAI" : "<string>",
+                        "_expandables" : [ {
+                          "disablePerson" : "velit Ut elit"
+                        }, {
+                          "disablePerson" : "aliquip sit"
+                        } ],
+                        "accessibilityFeaturesForJobLocal" : "<string>",
+                        "adjustsImageSize" : "<string>",
+                        "age" : "<string>",
+                        "arrivalDate" : "<string>",
+                        "bibliosUser" : "<string>",
+                        "birth" : "<string>",
+                        "blindPerson" : "<string>",
+                        "bloodType" : "<string>",
+                        "brazilConditionClassification" : "<string>",
+                        "brazilConsort" : "<string>",
+                        "brazilianChildren" : "<string>",
+                        "brazilianChildrenNumber" : "<string>",
+                        "candidate" : "<string>",
+                        "cep" : "<string>",
+                        "city" : "<string>",
+                        "cityCode" : "<string>",
+                        "code" : "<string>",
+                        "company" : "<string>",
+                        "complement" : "<string>",
+                        "country" : "<string>",
+                        "countryId" : "<string>",
+                        "cpf" : "<string>",
+                        "curriculumApprovalDate" : "<string>",
+                        "deafPerson" : "<string>",
+                        "deathCertificateNumber" : "<string>",
+                        "deceaseDate" : "<string>",
+                        "deceased" : "<string>",
+                        "disabled" : "<string>",
+                        "district" : "<string>",
+                        "documentImageId" : "<string>",
+                        "documentReverseSideImageId" : "<string>",
+                        "driversLicense" : "<string>",
+                        "driversLicenseEmissionDate" : "<string>",
+                        "driversLicenseEmitterAgency" : "<string>",
+                        "driversLicenseEmitterState" : "<string>",
+                        "driversLicenseExpirationDate" : "<string>",
+                        "driversLicenseFirstEmissionDate" : "<string>",
+                        "driversLicenseType" : "<string>",
+                        "educationalLevel" : "<string>",
+                        "electoralCard" : "<string>",
+                        "electoralCardDate" : "<string>",
+                        "electoralCardEmitterState" : "<string>",
+                        "electoralSection" : "<string>",
+                        "electoralWard" : "<string>",
+                        "email" : "<string>",
+                        "employee" : "<string>",
+                        "fax" : "<string>",
+                        "firstJobYear" : "<string>",
+                        "formerEmployee" : "<string>",
+                        "homeState" : "<string>",
+                        "identityNumber" : "<string>",
+                        "identityNumberEmissionDate" : "<string>",
+                        "identityNumberEmitterAgency" : "<string>",
+                        "identityNumberEmitterState" : "<string>",
+                        "image" : "<string>",
+                        "imageId" : "<string>",
+                        "immigrationDecree" : "<string>",
+                        "indefiniteTermResidence" : "<string>",
+                        "intellectualImpairedPerson" : "<string>",
+                        "jobCode" : "<string>",
+                        "letterModel19" : "<string>",
+                        "location" : "<string>",
+                        "maritalState" : "<string>",
+                        "mentallyImpairedPerson" : "<string>",
+                        "militaryCertificateEmissionDate" : "<string>",
+                        "militaryCertificateEmitterAgency" : "<string>",
+                        "militaryDischargeCertificate" : "<string>",
+                        "militaryDivision" : "<string>",
+                        "militaryGrade" : "<string>",
+                        "militaryRegion" : "<string>",
+                        "militarySituation" : "<string>",
+                        "mutePerson" : "<string>",
+                        "name" : "<string>",
+                        "nationality" : "<string>",
+                        "nativeCountry" : "<string>",
+                        "naturalisationDate" : "<string>",
+                        "naturalisationGatehouse" : "<string>",
+                        "naturalized" : "<string>",
+                        "naturalness" : "<string>",
+                        "naturalnessCode" : "<string>",
+                        "neighborhoodTypeCode" : "<string>",
+                        "nickname" : "<string>",
+                        "nit" : "<string>",
+                        "number" : "<string>",
+                        "occupationCode" : "<string>",
+                        "passportEmissionDate" : "<string>",
+                        "passportExpirationDate" : "<string>",
+                        "passportNumber" : "<string>",
+                        "personNote" : "<string>",
+                        "phoneNumber1" : "<string>",
+                        "phoneNumber2" : "<string>",
+                        "phoneNumber3" : "<string>",
+                        "pppObservationCode" : "<string>",
+                        "previousTrainingInvestment" : "<string>",
+                        "professionalRegistrationNumber" : "<string>",
+                        "rehabilitated" : "<string>",
+                        "resourcesForJob" : "<string>",
+                        "rne" : "<string>",
+                        "rneEmissionDate" : "<string>",
+                        "rneEmitterAgency" : "<string>",
+                        "rneExpirationDate" : "<string>",
+                        "rowState" : "<string>",
+                        "scriptTag" : "<string>",
+                        "sex" : "<string>",
+                        "shadeRace" : "<string>",
+                        "smoker" : "<string>",
+                        "socialName" : "<string>",
+                        "state" : "<string>",
+                        "street" : "<string>",
+                        "streetTypeCode" : "<string>",
+                        "student" : "<string>",
+                        "teacher" : "<string>",
+                        "userCode" : "<string>",
+                        "validRow" : "<string>",
+                        "visaType" : "<string>",
+                        "workCard" : "<string>",
+                        "workCardEmissionDate" : "<string>",
+                        "workCardEmitterState" : "<string>",
+                        "workCardExpirationDate" : "<string>",
+                        "workCardSerialNumber" : "<string>"
+                      } ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags" : [ {
+    "name" : "v1"
+  }, {
+    "name" : "persons"
+  }, {
+    "name" : "{id}"
+  }, {
+    "name" : "schema"
+  } ]
+}
